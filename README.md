@@ -1,5 +1,5 @@
 # Spotify_project
-[Spotify_logo](https://github.com/Andrii-Klipailo/Spotify_project/blob/main/Spotify_img.png)
+[Spotify_logo](https://github.com/Andrii-Klipailo/Spotify_project/blob/main/spotify_logo.jpg)
 ## Overview
 Analyzing the most popular songs on Spotify in order to find the main patterns in them.
 This dataset contains audio statistics of the top 2000 tracks on Spotify from 2000 to 2019.
