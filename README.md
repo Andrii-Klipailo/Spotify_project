@@ -215,6 +215,17 @@ ORDER BY 2 DESC
 
 
 
+## Findings and Conclusion
+
+The analysis of the top 2000 tracks on Spotify reveals key insights:
+High Popularity Characteristics: Popular songs tend to have higher energy, danceability, and tempo compared to less popular tracks.
+Genre Preferences: Genres like pop and hip-hop dominate high popularity songs, reflecting global music trends.
+Top Artists: A small group of artists contribute significantly to popular tracks, showcasing the importance of consistency.
+Explicit Content: Many popular songs feature explicit content, reflecting broader trends in mainstream music.
+Yearly Trends: The number of high popularity songs varies over time, indicating shifts in musical preferences.
+
+
+In conclusion, specific characteristics like genre, energy, and explicit content play a significant role in a song's popularity, with some artists and genres consistently performing well.
 
 
 
@@ -230,11 +241,10 @@ ORDER BY 2 DESC
 
 
 
+## Additional information
 
 
-
-
-Сontents of the tables
+### Сontents of the tables
 
 Songs table:
 
