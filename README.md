@@ -35,7 +35,7 @@ FROM songs
 WHERE popularity >70
 )
 ;
-
+```
 ### Analysis of average characteristics for songs with high, low, and overall popularity
 
 ```SQL
@@ -91,7 +91,7 @@ SELECT * FROM low_cte
 UNION
 SELECT * FROM total_cte
 ;
-'''
+```
 ### Top artists by the number of songs with high popularity rating
 
 ```SQL
