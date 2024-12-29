@@ -5,6 +5,8 @@ Analyzing most popular songs on Spotify in order to find the main patterns in th
 
 This dataset contains audio statistics of the top 2000 tracks on Spotify from 2000-2019
 
+
+### Analysis of the dataset using SQL
 ```SQL
 -- Main query to check full information from the table
 SELECT * FROM songs
