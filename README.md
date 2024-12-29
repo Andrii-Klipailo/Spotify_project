@@ -36,8 +36,9 @@ WHERE popularity >70
 )
 ;
 
+### Analysis of average characteristics for songs with high, low, and overall popularity
 
-
+```SQL
 --Checking the averages for the high popularity list
 WITH high_cte AS(
 SELECT 'high' AS popularity
@@ -90,9 +91,10 @@ SELECT * FROM low_cte
 UNION
 SELECT * FROM total_cte
 ;
+'''
+### Top artists by the number of songs with high popularity rating
 
-
-
+```SQL
 --The top artists by the number of songs with a high popularity rating
 SELECT artist
 	,COUNT(DISTINCT song) AS num_of_songs
@@ -100,10 +102,11 @@ FROM high_popularity
 GROUP BY artist
 ORDER BY num_of_songs DESC
 ;
+```
 
+### Comparing the proportions between the total number of songs by genre and the number of high popularity songs by genre
 
-
---Comparing the proportions between the total number of songs by genre and the number of high popularity songs by genre
+```SQL
 --Counting the total number of songs by genre
 WITH total_genre_cte AS (
 SELECT individual_genre
@@ -132,9 +135,11 @@ FROM total_genre_cte tl
 LEFT JOIN popular_genre_cte pl
 ON tl.individual_genre = pl.individual_genre
 ;
+```
 
+### Number of high popularity songs for each year
 
-
+```SQL
 --Counting the number of high popularity songs for each year
 SELECT year
 	,COUNT(DISTINCT song)
@@ -142,9 +147,11 @@ FROM high_popularity
 GROUP BY 1
 ORDER BY 1
 ;
+```
 
+### Top 3 high popularity songs for each year by popularity rating"
 
-
+```SQL
 --Discovering the top 3 high popularity songs for each year by popularity rating 
 WITH rate_per_year AS (
 SELECT *
@@ -162,10 +169,12 @@ FROM rate_per_year
 WHERE rate <=3 
 ORDER BY year, popularity DESC
 ;
+```
 
+### Percentage of songs marked as Explicit in the dataset
 
-
---Counting the percentage of songs with Explicit marks
+```SQL
+--Calculating the percentage of songs with Explicit marks
 SELECT (with_explicit*100)/total AS explicit_percentage
 FROM (SELECT SUM(CASE 
 				WHEN explicit = TRUE THEN 1
@@ -173,9 +182,11 @@ FROM (SELECT SUM(CASE
 			,COUNT(explicit) AS total
 		FROM songs) ex
 ;
+```
 
+### Number of songs per artist in the dataset
 
-
+```SQL
 --Counting the number of songs per artist
 SELECT artist
 	,COUNT(DISTINCT song) AS num_of_songs
@@ -183,9 +194,11 @@ FROM songs s
 GROUP BY 1
 ORDER BY 2 DESC
 ;
+```
 
+### Comparison of high popularity songs and total songs for artists with more than 3 songs
 
-
+```SQL 
 --Comparing the number of high popularity songs to the total number of songs for artists with more than 3 songs
 SELECT s.artist
 	,COUNT(DISTINCT s.song) AS num_of_songs
