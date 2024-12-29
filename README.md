@@ -1,5 +1,5 @@
 # Spotify_project
-
+[Spotify_logo](https://github.com/Andrii-Klipailo/Spotify_project/blob/main/Spotify_img.png)
 ## Overview
 Analyzing the most popular songs on Spotify in order to find the main patterns in them.
 This dataset contains audio statistics of the top 2000 tracks on Spotify from 2000 to 2019.
@@ -246,7 +246,7 @@ In conclusion, specific characteristics like genre, energy, and explicit content
 
 ### Сontents of the tables
 
-Songs table:
+#### Songs table:
 
 •	id: unique id
 •	artist: Name of the Artist.
@@ -258,7 +258,7 @@ Songs table:
 •	danceability: Danceability describes how suitable a track is for dancing based on a combination of musical elements including tempo, rhythm stability, beat strength, and overall regularity. A value of 0.0 is least danceable and 1.0 is most danceable.
 •	genre: Genre of the track.
 
-Song_properties table:
+#### Song_properties table:
 
 •	id: unique id
 •	energy: Energy is a measure from 0.0 to 1.0 and represents a perceptual measure of intensity and activity.
