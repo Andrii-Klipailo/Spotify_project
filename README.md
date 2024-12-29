@@ -1,4 +1,4 @@
-# Spotify_project
+# Spotify Data Analysis Using SQL
 ![Spotifylogo](https://github.com/Andrii-Klipailo/Spotify_project/blob/main/SpotifyLogo.png)
 ## Overview
 Analyzing the most popular songs on Spotify in order to find the main patterns in them.
